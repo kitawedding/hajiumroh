@@ -1,0 +1,769 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+/* Navbar */
+.navbar.fixed-top {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+
+.scroll-nav-active {
+  background: #1f1f1f;
+}
+
+.nav-link {
+  margin: 0px 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.nav-link.active {
+  color: #f9b88e;
+  margin: 0px 10px;
+  font-size: 18px;
+}
+
+/* Hero */
+#hero {
+  background-image: url("images/bg-mekah.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 800px;
+  padding-top: 100px;
+}
+
+/* Offers */
+.img-offers {
+  border-radius: 15px;
+}
+
+/* Services */
+#services {
+  /* background-image: linear-gradient(to right, #cccac7 0%, #f8f6f2 50%); */
+  background-image: url("images/bg-services.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* Styles for Travel Section */
+#travel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff00;
+  /* Optional background */
+  padding: 40px 0;
+}
+
+.travel-track {
+  display: flex;
+  will-change: transform;
+}
+
+.travel-item {
+  flex: 0 0 auto;
+  width: 180px;
+  /* Lebar item */
+  margin: 0 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.travel-item:hover {
+  transform: scale(1.05);
+  /* Efek hover */
+}
+
+.travel-item img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.offers-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.offers-title {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.offers-title:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e9c46a;
+}
+
+.package-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.package-details {
+  padding: 20px;
+  text-align: left;
+}
+
+.package-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.package-price {
+  color: #e9c46a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.package-price span {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.package-duration {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.services-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+.airlines-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.airline-logo {
+  max-height: 40px;
+  margin: 0 20px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.airline-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.all-inclusive {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.package-box {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.package-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-image-curved {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.package-image-curved img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.package-content {
+  padding: 20px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+
+.footer-links h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e9c46a;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #e9c46a;
+  color: #1a1a1a;
+}
+
+/* Responsive Design */
+/* Mobile and Tablet Styles */
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar */
+  .navbar.fixed-top {
+    padding: 10px 0;
+  }
+
+  .nav-link, .nav-link.active {
+    font-size: 16px;
+    margin: 0px 5px;
+    padding: 5px 10px;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: 500px;
+    padding-top: 70px;
+    background-position: center;
+  }
+  .hero-title-wrapper {
+    padding: 20px 0;
+  }
+
+  .hero-title-wrapper h1.text-super-besar {
+    font-size: 2.2rem !important;
+    line-height: 1.3;
+    padding: 10px 0 !important;
+    margin-bottom: 15px;
+  }
+
+  .hero-title-wrapper h5.text-normal {
+    font-size: 1rem !important;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .hero-title-wrapper h5.text-normal br {
+    display: none;
+  }
+
+  .hero-title-wrapper .btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    margin-top: 20px !important;
+  }
+
+  /* Offers Section */
+  .offers-section {
+    padding: 50px 0;
+  }
+
+  .offers-title {
+    margin-bottom: 30px;
+  }
+
+  .package-card {
+    margin-bottom: 20px;
+  }
+
+  .package-image {
+    height: 150px;
+  }
+
+  /* Services Section */
+  #services {
+    padding: 50px 0;
+  }
+
+  /* Travel Section */
+  #travel {
+    padding: 20px 0;
+  }
+
+  .travel-item {
+    width: 120px;
+    margin: 0 15px;
+  }
+
+  .travel-item img {
+    height: 40px;
+  }
+
+  /* Airlines Section */
+  .airlines-section {
+    padding: 20px 0;
+  }
+
+  .airline-logo {
+    max-height: 30px;
+    margin: 0 10px;
+  }
+
+  /* All Inclusive Section */
+  .all-inclusive {
+    padding: 50px 0;
+  }
+
+  .package-box {
+    margin-bottom: 20px;
+  }
+
+  .package-image-curved {
+    height: 150px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 0;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+  }
+}
+
+/* Additional Mobile-specific Styles (up to 768px) */
+@media (max-width: 768px) {
+  /* Hero Section */
+  #hero {
+    height: 400px;
+  }
+  .hero-title-wrapper h1.text-super-besar {
+    font-size: 1.8rem !important;
+    padding: 5px 0 !important;
+  }
+
+  .hero-title-wrapper h5.text-normal {
+    font-size: 0.9rem !important;
+    padding: 0 10px;
+  }
+
+  .hero-title-wrapper .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+  /* Travel Section */
+  .travel-item {
+    width: 100px;
+    margin: 0 10px;
+  }
+
+  .offers-section {
+    padding: 50px 0;
+  }
+
+  .offers-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .offers-title:after {
+    width: 60px;
+    bottom: -10px;
+  }
+
+  .offers-section .text-muted {
+    font-size: 0.9rem;
+    margin-bottom: 30px !important;
+  }
+
+  /* Change to 2 columns layout */
+  .offers-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .offers-section .col-lg-3,
+  .offers-section .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .package-card {
+    margin-bottom: 0;
+  }
+
+  .package-image {
+    height: 160px;
+  }
+
+  .package-details {
+    padding: 15px;
+  }
+
+  .package-title {
+    font-size: 1.1rem;
+  }
+
+  .package-price {
+    font-size: 1rem;
+  }
+
+  .package-duration {
+    font-size: 0.8rem;
+  }
+  .airlines-section {
+    padding: 30px 0;
+  }
+  
+  .airlines-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .airlines-section .col-md-12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .airline-logo {
+    max-height: 30px;
+    margin: 0 8px 15px 8px;
+    flex: 0 0 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+    object-fit: contain;
+  }
+  .all-inclusive {
+    padding: 50px 0;
+  }
+  
+  .all-inclusive h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .all-inclusive .text-muted {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 15px;
+    margin-bottom: 30px !important;
+  }
+  
+  /* Change to 2 columns layout */
+  .all-inclusive .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .all-inclusive .col-lg-3,
+  .all-inclusive .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  .package-box {
+    margin-bottom: 0;
+  }
+  
+  .package-image-curved {
+    height: 150px;
+  }
+  
+  .package-content {
+    padding: 15px;
+  }
+  
+  .package-content h5 {
+    font-size: 1.1rem;
+  }
+  
+  .package-content p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  
+  .package-content .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  /* Footer Layout */
+  .footer-links {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  footer {
+    padding: 30px 0 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .footer-links h5 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer-links h5:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #e9c46a;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+    list-style: none;
+  }
+
+  .footer-links a, 
+  .footer-links li {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+
+  .footer-links a:hover {
+    color: #e9c46a;
+    text-decoration: none;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-bottom: 20px !important;
+  }
+
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 6px;
+    font-size: 0.9rem;
+  }
+
+  .footer-links img.img-fluid {
+    max-width: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .row.mt-4 .col-md-12 p {
+    font-size: 0.8rem;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    margin-top: 10px;
+  }
+
+  /* Contact icons adjustment */
+  .fa-envelope, 
+  .fa-phone, 
+  .fa-map-marker-alt {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  /* Navbar */
+  .nav-link, .nav-link.active {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: 300px;
+  }
+  .hero-title-wrapper h1.text-super-besar {
+    font-size: 1.5rem !important;
+    margin-bottom: 10px;
+  }
+
+  .hero-title-wrapper h5.text-normal {
+    font-size: 0.85rem !important;
+    margin-bottom: 15px;
+  }
+  /* Offers Title */
+  .offers-title h2 {
+    font-size: 1.5rem;
+  }
+  .offers-section {
+    padding: 40px 0;
+  }
+
+  .offers-title {
+    font-size: 1.5rem;
+  }
+
+  .package-image {
+    height: 120px;
+  }
+
+  .package-details {
+    padding: 12px;
+  }
+
+  .package-title {
+    font-size: 1rem;
+  }
+
+  .package-price {
+    font-size: 0.9rem;
+  }
+/* Airlines Section */
+.airline-logo {
+  flex: 0 0 calc(50% - 16px);
+  max-width: calc(50% - 16px);
+  max-height: 25px;
+}
+
+/* All Inclusive Packages */
+.all-inclusive {
+  padding: 40px 0;
+}
+
+.all-inclusive h2 {
+  font-size: 1.5rem;
+}
+
+.all-inclusive .col-lg-3,
+.all-inclusive .col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.package-image-curved {
+  height: 180px;
+}
+  /* Travel Section */
+  .travel-item {
+    width: 80px;
+    margin: 0 5px;
+  }
+
+  .travel-item img {
+    height: 30px;
+  }
+  .text-super-besar {
+    size: 15px;
+  }
+  .footer-links {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .footer-links h5 {
+    font-size: 1rem;
+  }
+
+  .footer-links a, 
+  .footer-links li {
+    font-size: 0.85rem;
+  }
+
+  .social-icons a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  .footer-links img.img-fluid {
+    max-width: 100px;
+  }
+}
